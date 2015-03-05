@@ -35,7 +35,7 @@ The last dataset examines the name and term of selected legislators as well as t
 Finally, we can visualize the filtered datasets from the step from above.
 
 ```{r}
-source("../03_Visualization/Visualization.R", echo=TRUE)
+source("../03_Visualizations/Visualization.R", echo=TRUE)
 ```
 
 The first visualization suggested that each committee is correlated with a certain chamber. There are also many legislators serving in each committeee from different affiliations.
@@ -46,5 +46,10 @@ The last visualization provides a segment of the legislator's party and the term
 
 Finally, the following are visualization of categorical and measure columns:
 ```{r}
-source("../03_Visualization/Categorical.R", echo=TRUE)
+source("../03_Visualizations/Categorical.R", echo=FALSE)
 ```
+
+There raw plots are not organized, so the information seem very messy. We use visual formatting for those categorical visualizations to gain the following graphs:
+
+![](./../03_Visualizations/Categoricals.png)
+![](./../03_Visualizations/Measures.png)

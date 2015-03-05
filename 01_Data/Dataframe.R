@@ -2,5 +2,3 @@ dfL <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?qu
 head(dfL)
 dfR <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?query="select * from LEGISLATOR_ROLE"'),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521:ORCL', USER='C##cs329e_yj2946', PASS='orcl_yj2946', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE)))
 head(dfR)
-dfC <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?query="select * from COMMITTEE"'),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521:ORCL', USER='C##cs329e_yj2946', PASS='orcl_yj2946', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE)))
-head(dfC)
