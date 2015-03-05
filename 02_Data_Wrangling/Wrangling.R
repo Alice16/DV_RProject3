@@ -1,0 +1,3 @@
+g1 <- inner_join(dfL, dfR, by = "SERIALID")  %>% select(COMMITTEE_ID, COMMITTEE, FULL_NAME, CHAMBER) %>% group_by(COMMITTEE_ID, COMMITTEE) %>% filter(COMMITTEE_ID != "null")
+g2 <- inner_join(dfL, dfR, by = "SERIALID")  %>% select(COMMITTEE_ID, ACTIVE) %>% group_by(COMMITTEE_ID, ACTIVE) %>% filter(COMMITTEE_ID != "null") %>% summarise(n = n())
+g3 <- inner_join(dfL, dfR, by = "SERIALID") %>% select(FULL_NAME, TERM, PARTY.x, TYPE) %>% filter(TYPE == "member", PARTY.x != "null")

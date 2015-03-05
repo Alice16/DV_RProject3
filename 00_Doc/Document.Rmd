@@ -17,5 +17,34 @@ source("../01_Data/Dataframe.R", echo=TRUE)
 ```
 
 ##Data Wrangling
+We now use the data wrangling to filter and join dataframes together for analysis.
+
+The following are the datasets wrangled for analysis purposes using the tables Legislator and Legislator_Roles.
+
+```{r}
+source("../02_Data_Wrangling/Wrangling.R", echo=TRUE)
+```
+
+The first dataset filters the joined table see the relationship between the committee and the names of the legislators in it.
+
+The second dataset filters down the joined table to view the number of active legislators and inactive legislators in each committtee.
+
+The last dataset examines the name and term of selected legislators as well as their party affiliation.
 
 ##Visualization
+Finally, we can visualize the filtered datasets from the step from above.
+
+```{r}
+source("../03_Visualization/Visualization.R", echo=TRUE)
+```
+
+The first visualization suggested that each committee is correlated with a certain chamber. There are also many legislators serving in each committeee from different affiliations.
+
+The second visualization showed that the number of inactive members are not significantly higher than active members. This may be due to the fact that the data tables only account for terms from 81 to 83.
+
+The last visualization provides a segment of the legislator's party and the term they served.
+
+Finally, the following are visualization of categorical and measure columns:
+```{r}
+source("../03_Visualization/Categorical.R", echo=TRUE)
+```
